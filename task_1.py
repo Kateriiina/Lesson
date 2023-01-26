@@ -15,9 +15,9 @@ def arithmetic(left_operand: int, right_operand: int, operation: str):
 
 
 if __name__ == "__main__":
-    assert arithmetic(3, 4, operation="*") == 12
-    assert arithmetic(3, 4, operation="+") == 7
-    assert arithmetic(25, 5, operation="/") == 5
+    assert arithmetic(5, 4, operation="*") == 20
+    assert arithmetic(3, 6, operation="+") == 9
+    assert arithmetic(21, 7, operation="/") == 3
     assert type(arithmetic(25, 5, operation="/")) == float
     assert arithmetic(5, 5, operation="//") == f"Not known operation: //"
     assert arithmetic.__doc__ == (
